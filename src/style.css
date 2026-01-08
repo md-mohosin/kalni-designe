@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1920px;
+  /* border: 1px solid red; */
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  /* border: 1px solid blue; */
+}
+
+.input-field {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  border: 1px solid #3C3252;
+  padding: 0 20px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.search-box {
+  width: 60%;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo .name {
+  font-size: 25px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.top-nav {
+  background: #4ABCE9;
+  color: white;
+  font-family: Montserrat;
+}
+
+.navbar {
+  background-color: white;
+  color: black;
+  background-color: #190D33;
+  padding: 25px 0;
+  color: white;
+}
+
+.logo {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 3px solid yellow;
+}
+
+.top-nav-content {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  height: 44px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.search-box input:focus {
+  outline: none;
+  border: none;
+}
+
+.middle-navbar {
+  font-family: Montserrat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom-nav {
+  font-family: Montserrat;
+}
+
+.input-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+}
+
+.input-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box input[type='text'] {
+  width: 100%;
+  color: white;
+  border: none;
+  background-color: inherit;
+}
+
+.search-btn {
+  width: 13%;
+  background-color: #409DDF;
+  font-size: 14px;
+  border: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+}
+
+.nav-icons {
+  width: 25%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dAccount {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.d-nav-icon {
+  position: relative;
+  width: 36px;
+}
+
+.d-cart-icon {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.nav-badge {
+  position: absolute;
+  background-color: #409DDF;
+  right: -1px;
+  top: -7px;
+  padding: 1px 5px;
+  border-radius: 50%;
+}
+
+.bottom-nav {
+  margin-top: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-browse-category {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.list-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

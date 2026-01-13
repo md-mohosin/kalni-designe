@@ -356,6 +356,8 @@
   font-weight: 600;
 }
 
+
+
 .latestView,
 .bestView,
 .weekView {
@@ -366,7 +368,8 @@
 
 .latestCard-container,
 .bestCard-container,
-.weekCard-container {
+.weekCard-container,
+.blogCard-container {
   padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -383,6 +386,8 @@
   flex-direction: column;
   padding: 15px;
   border-radius: 10px;
+  position: relative;
+  justify-content: space-between;
 }
 
 .specialProduct-card {
@@ -412,6 +417,7 @@
   border-radius: 8px;
   padding: 27px 0;
   height: 50%;
+  position: relative;
 }
 
 .cardImg {
@@ -652,8 +658,10 @@
 }
 
 .gaming-image-content {
-  flex: 1;
-  max-height: 330px;
+   flex: 1;
+  aspect-ratio: 16 / 9;
+  max-height: 300px;
+  height: 100%;
 }
 
 .gaming-img {
@@ -704,6 +712,65 @@
 }
 
 
+.discount-title {
+  background-color: #EDA766;
+  color: white;
+  width: 75px;
+  padding: 5px;
+  position: absolute;
+  left: 0;
+  top: 16px;
+  z-index: 1;
+}
+
+.wishlist-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.view-container {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.compare-container {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.wishlist-title,
+.view-title,
+.compare-title {
+  background-color: #4BC0EB;
+  padding: 5px 9px;
+  color: white;
+  border-radius: 5px;
+}
+
+.whislist-img,
+.view-img,
+.compare-img {
+  background-color: #4BC0EB;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.bg-color {
+  background-color: green;
+}
+
 
 
 
@@ -748,7 +815,8 @@
 
   .latestCard-container,
   .bestCard-container,
-  .weekCard-container {
+  .weekCard-container,
+  .blogCard-container {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -777,7 +845,8 @@
 
   .latestCard-container,
   .bestCard-container,
-  .weekCard-container {
+  .weekCard-container,
+  .blogCard-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -811,6 +880,7 @@
 
   .banner-image {
     height: 500px;
+    /* border: 1px solid blue; */
   }
 
   .banner-support-container {
@@ -824,7 +894,8 @@
 
   .latestCard-container,
   .bestCard-container,
-  .weekCard-container {
+  .weekCard-container,
+  .blogCard-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -863,6 +934,16 @@
   .specialPHeadphone {
     width: 100%;
   }
+  .footer {
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px 10px;
+  }
+   .newsletter {
+    flex-direction: column;
+    gap: 35px;
+    padding: 40px 10px;
+  }
 }
 
 
@@ -871,7 +952,8 @@
   .popularCategory-cardContent,
   .latestCard-container,
   .bestCard-container,
-  .weekCard-container {
+  .weekCard-container,
+  .blogCard-container {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -890,10 +972,15 @@
   .blog-titleContent {
     flex-direction: column;
     align-items: start;
+    gap: 10px;
   }
 
   .bestView {
     flex-direction: column;
+  }
+
+  .weekView {
+    margin-top: 13px;
   }
 
   .specialPLogo {
@@ -908,8 +995,55 @@
   .latestCard-container,
   .bestCard-container,
   .popularCategory-cardContent,
-  .weekCard-container {
+  .weekCard-container,
+  .blogCard-container {
     place-items: center;
+  }
+
+  .subscribeBtn {
+    padding: 10px 10px;
+  }
+
+  .subscribInput {
+    font-size: 13px;
+  }
+
+
+  .footer-logo {
+    width: 100%;
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .info-title {
+    padding-bottom: 5px;
+  }
+
+  .socialIcons {
+    margin-top: 15px;
+  }
+
+ 
+
+  .newsletter-title {
+    font-size: 24px;
+  }
+
+  .weekTitle-container {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .gaming-image-container {
+    flex-direction: column;
+  }
+
+  .banner-image{
+    height: 100%;
+    max-height: 500px;
   }
 
   /* .latestProduct-card,

@@ -14,7 +14,8 @@
 
 .content,
 .banner-container {
-  width: 80%;
+  /* width: 80%; */
+  max-width: 1320px;
   margin: 0 auto;
   /* border: 1px solid blue; */
 }
@@ -259,7 +260,8 @@
 
 .popular-category-section,
 .latestCollection,
-.weekProductCollection {
+.weekProductCollection,
+.blog-section {
   font-family: Montserrat;
   padding-top: 130px;
 }
@@ -282,6 +284,7 @@
 }
 
 .popular-category-card {
+  max-width: 244px;
   width: 100%;
   background-color: #1F1D40;
   display: flex;
@@ -335,7 +338,8 @@
 
 .latest-titleContent,
 .best-titleContent,
-.weekProduct-titleContent {
+.weekProduct-titleContent,
+.blog-titleContent {
   background-color: #1F1D40;
   color: white;
   display: flex;
@@ -372,6 +376,7 @@
 .latestProduct-card,
 .bestProduct-card,
 .weekProduct-card {
+  max-width: 306px;
   width: 100%;
   background-color: #1F1D40;
   display: flex;
@@ -383,6 +388,8 @@
 .specialProduct-card {
   background-image: url('./images/Vector2.png');
   border-radius: 10px;
+  max-width: 306px;
+  width: 100%;
 }
 
 .specilaPImgContainer {
@@ -646,15 +653,55 @@
 
 .gaming-image-content {
   flex: 1;
-  max-height: 360px;
+  max-height: 330px;
 }
 
 .gaming-img {
   max-width: 100%;
   width: 100%;
-  height: 100%;border-radius: 10px;
+  height: 100%;
+  border-radius: 10px;
 }
 
+.blog-card {
+  max-width: 306px;
+  width: 100%;
+  border-radius: 13px;
+  background-color: #1F1D40;
+}
+
+.blog-img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 196px;
+  height: 100%;
+  border-top-right-radius: 13px;
+  border-top-left-radius: 13px;
+}
+
+.blog-content {
+  color: white;
+  justify-self: center;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.blogContent-title {
+  padding: 10px 0;
+}
+
+.read-btn-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.read-more-btn {
+  text-decoration: none;
+  color: white;
+}
 
 
 
@@ -839,7 +886,8 @@
   }
 
   .latest-titleContent,
-  .weekProduct-titleContent {
+  .weekProduct-titleContent,
+  .blog-titleContent {
     flex-direction: column;
     align-items: start;
   }
@@ -864,10 +912,10 @@
     place-items: center;
   }
 
-  .latestProduct-card,
+  /* .latestProduct-card,
   .bestProduct-card,
   .specialProduct-card,
   .weekProduct-card {
     max-width: 310px;
-  }
+  } */
 }

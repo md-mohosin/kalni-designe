@@ -382,7 +382,7 @@
 .weekView {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 
 .latestCard-container,
@@ -547,7 +547,7 @@
 
 .num {
   background-color: #3A3861;
-  padding: 12px;
+  padding: 10px;
   border-radius: 4px;
 }
 

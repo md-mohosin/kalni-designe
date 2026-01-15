@@ -9,20 +9,23 @@
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
 
 .content,
 .banner-container {
-  /* width: 80%; */
   max-width: 1320px;
+  width: 100%;
   margin: 0 auto;
-  /* border: 1px solid blue; */
+}
+
+.middle-nav-right {
+  display: flex;
+  gap: 13px;
+  width: 100%;
 }
 
 .input-field {
   display: flex;
-  justify-content: space-between;
   gap: 20px;
   width: 100%;
   border: 1px solid #3C3252;
@@ -31,19 +34,19 @@
   border-bottom-left-radius: 6px;
 }
 
-.nav-menu {
+.menu-icon,.search-icon {
   display: none;
 }
 
 .search-box {
-  width: 60%;
+  max-width: 750px;
+  width: 100%;
   height: 44px;
   display: flex;
-  justify-content: space-between;
 }
 
 .logo .name {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 900;
   font-style: italic;
 }
@@ -55,7 +58,6 @@
 }
 
 .navbar {
-  background-color: white;
   color: black;
   background-color: #190D33;
   padding: 25px 0;
@@ -63,11 +65,10 @@
 }
 
 .logo {
-  width: 15%;
+  width: 121px;
   display: flex;
   align-items: center;
-  gap: 8px;
-  /* border: 3px solid yellow; */
+  gap: 5px;
 }
 
 .top-nav-content {
@@ -89,14 +90,13 @@
 .middle-navbar {
   font-family: Montserrat;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 110px;
 }
 
 .bottom-nav {
   font-family: Montserrat;
-  margin-top: 34px;
+  margin-top: 21px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,29 +116,29 @@
 }
 
 .search-box input[type='text'] {
-  width: 100%;
+  width: 50%;
   color: white;
   border: none;
   background-color: inherit;
 }
 
 .search-btn {
-  width: 13%;
+  width: 104px;
   background-color: #409DDF;
   font-size: 14px;
   border: none;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
   color: white;
 }
 
 .nav-icons {
-  width: 25%;
-  /* border: 1px solid red; */
+  width: 45%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 23px;
 }
 
 .dAccount {
@@ -150,21 +150,21 @@
 
 .d-nav-icon {
   position: relative;
-  width: 36px;
+  width: 30px;
   cursor: pointer;
 }
 
 .d-cart-icon {
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 16px;
   cursor: pointer;
 }
 
 .nav-badge {
   position: absolute;
   background-color: #409DDF;
-  right: -1px;
+  left: 19px;
   top: -7px;
   padding: 1px 5px;
   border-radius: 50%;
@@ -181,6 +181,7 @@
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .banner-section {
@@ -229,6 +230,10 @@
   color: white;
 }
 
+.gray-color{
+  color: #6B6A7C;
+}
+
 .banner-heading {
   font-size: 60px;
   margin-bottom: 25px;
@@ -244,7 +249,7 @@
 }
 
 .banner-support-container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -263,8 +268,10 @@
 .weekProductCollection,
 .blog-section {
   font-family: Montserrat;
-  padding-top: 130px;
+  padding-top: 72px;
 }
+
+
 
 .productAndCategory-seciton {
   background-color: #160C2D;
@@ -273,19 +280,22 @@
 .popularCategory-cardContent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 29px;
+  gap: 24px;
+  place-items: center;
+  padding-top: 24px;
 }
 
 .popularCategory-title {
   font-size: 24px;
   color: white;
-  margin-bottom: 30px;
   font-weight: 600;
 }
 
 .popular-category-card {
   max-width: 244px;
   width: 100%;
+  max-height: 265px;
+  height: 100%;
   background-color: #1F1D40;
   display: flex;
   flex-direction: column;
@@ -293,7 +303,7 @@
   align-items: center;
   gap: 20px;
   padding: 26px;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .popular-P-content {
@@ -304,12 +314,14 @@
 }
 
 .popular-P-name {
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 16px;
   color: white;
 }
 
 .items-title {
   color: gray;
+  font-size: 14px;
 }
 
 .popularCategory-img {
@@ -357,6 +369,11 @@
 }
 
 
+.bestPrice-section {
+  font-family: Montserrat;
+  padding-top: 87px;
+}
+
 
 .latestView,
 .bestView,
@@ -370,10 +387,11 @@
 .bestCard-container,
 .weekCard-container,
 .blogCard-container {
-  padding-top: 30px;
+  padding-top: 24px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
+  place-items: center;
 }
 
 .latestProduct-card,
@@ -381,10 +399,12 @@
 .weekProduct-card {
   max-width: 306px;
   width: 100%;
+  min-height: 550px;
+  height: 100%;
   background-color: #1F1D40;
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 20px;
   border-radius: 10px;
   position: relative;
   justify-content: space-between;
@@ -395,6 +415,8 @@
   border-radius: 10px;
   max-width: 306px;
   width: 100%;
+  min-height: 550px;
+  height: 100%;
 }
 
 .specilaPImgContainer {
@@ -527,7 +549,7 @@
 
 .newsletter-section {
   background-image: linear-gradient(to right, #4DC8ED, #3F98DD);
-  margin-top: 110px;
+  margin-top: 90px;
   font-family: Montserrat;
   color: white;
 }
@@ -544,7 +566,7 @@
 }
 
 .subscirbe-section {
-  max-width: 550px;
+  max-width: 545px;
   background-color: white;
   border-radius: 8px;
   width: 100%;
@@ -587,7 +609,7 @@
 .info-title {
   font-size: 24px;
   font-weight: 600;
-  padding-bottom: 14px;
+  padding-bottom: 20px;
 }
 
 .footer-section {
@@ -619,14 +641,14 @@
 .email-support,
 .phone-contact {
   display: flex;
-  gap: 7px;
+  gap: 10px;
   align-items: center;
 }
 
 .location {
   display: flex;
   align-items: start;
-  gap: 7px;
+  gap: 10px;
 }
 
 .footer-bottom {
@@ -637,28 +659,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 17px 0;
 }
 
 .payment-icons {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .socialIcons {
   display: flex;
-  gap: 8px;
+  gap: 12px;
   margin-top: 25px;
 }
 
 .gaming-image-container {
   display: flex;
   gap: 30px;
-  margin-top: 110px;
+  margin-top: 80px;
 }
 
 .gaming-image-content {
-   flex: 1;
+  flex: 1;
   aspect-ratio: 16 / 9;
   max-height: 300px;
   height: 100%;
@@ -710,7 +732,6 @@
   text-decoration: none;
   color: white;
 }
-
 
 .discount-title {
   background-color: #EDA766;
@@ -789,20 +810,14 @@
     justify-content: center;
     gap: 20px;
   }
-
-
 }
 
 
 
-@media (max-width:1350px) {
-  .search-box {
-    width: 55%;
-  }
 
-  .nav-icons {
-    width: 45%;
-  }
+
+
+@media (max-width:1440px) {
 
   .search-box input[type='text'],
   .input-name {
@@ -819,17 +834,21 @@
   .blogCard-container {
     grid-template-columns: repeat(3, 1fr);
   }
-
-
 }
 
 
 
 
+
+
+
 @media (max-width:1250px) {
-  .nav-menu {
-    display: block;
+  .hidden-icon{
+    margin-left: auto;
   }
+.menu-icon{
+  display: block;
+}
 
   .bottom-nav {
     display: none;
@@ -854,13 +873,11 @@
 
 
 
+
+
 @media (max-width:1024px) {
   .nav-icons {
     display: none;
-  }
-
-  .search-box {
-    width: 60%;
   }
 
   .banner-section {
@@ -880,7 +897,6 @@
 
   .banner-image {
     height: 500px;
-    /* border: 1px solid blue; */
   }
 
   .banner-support-container {
@@ -898,15 +914,30 @@
   .blogCard-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .newsletter {
+    gap: 20px;
+  }
+
+  .subscirbe-section {
+    max-width: 400px;
+  }
 }
 
 
 
 
 
-@media (max-width:768px) {
+@media (max-width:800px) {
   .search-box {
     display: none;
+  }
+  .search-icon{
+    display: block;
+  }
+
+  .middle-navbar {
+    justify-content: space-between;
   }
 
   .banner-image,
@@ -934,17 +965,27 @@
   .specialPHeadphone {
     width: 100%;
   }
+
   .footer {
     flex-direction: column;
     gap: 50px;
     padding: 40px 10px;
   }
-   .newsletter {
+
+  .newsletter {
     flex-direction: column;
     gap: 35px;
     padding: 40px 10px;
   }
+
+  .footer-logo {
+    width: 100%;
+  }
 }
+
+
+
+
 
 
 @media (max-width:610px) {
@@ -1009,10 +1050,6 @@
   }
 
 
-  .footer-logo {
-    width: 100%;
-  }
-
   .footer-bottom-content {
     flex-direction: column;
     gap: 20px;
@@ -1025,8 +1062,6 @@
   .socialIcons {
     margin-top: 15px;
   }
-
- 
 
   .newsletter-title {
     font-size: 24px;
@@ -1041,15 +1076,8 @@
     flex-direction: column;
   }
 
-  .banner-image{
+  .banner-image {
     height: 100%;
     max-height: 500px;
   }
-
-  /* .latestProduct-card,
-  .bestProduct-card,
-  .specialProduct-card,
-  .weekProduct-card {
-    max-width: 310px;
-  } */
 }

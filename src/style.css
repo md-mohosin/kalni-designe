@@ -254,7 +254,7 @@
   gap: 130px;
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  padding: 30px 25px;
   font-family: Montserrat;
   font-size: 14px;
 }
@@ -955,6 +955,10 @@
 @media (max-width:800px) {
   .search-box {
     display: none;
+  }
+
+  .specilaPImgContainer{
+    justify-content: center;
   }
 
    .footer {

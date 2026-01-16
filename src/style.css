@@ -129,8 +129,8 @@
   background-color: #409DDF;
   font-size: 14px;
   border: none;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   cursor: pointer;
   font-size: 14px;
   color: white;
@@ -146,7 +146,7 @@
 .dAccount {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 10px;
   cursor: pointer;
 }
 
@@ -159,7 +159,7 @@
 .d-cart-icon {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   cursor: pointer;
 }
 
@@ -167,7 +167,7 @@
   position: absolute;
   background-color: #409DDF;
   left: 19px;
-  top: -7px;
+  top: -2px;
   padding: 1px 5px;
   border-radius: 50%;
   font-size: 10px;
@@ -679,7 +679,7 @@
 
 .gaming-image-container {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   margin-top: 80px;
 }
 
@@ -804,7 +804,7 @@
 @media (min-width:1162px) {
   .banner-image {
     margin-left: auto;
-    transform: translateX(58px);
+    transform: translateX(57px);
   }
 }
 

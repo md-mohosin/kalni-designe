@@ -944,6 +944,8 @@
   .subscirbe-section {
     max-width: 400px;
   }
+
+ 
 }
 
 
@@ -953,6 +955,12 @@
 @media (max-width:800px) {
   .search-box {
     display: none;
+  }
+
+   .footer {
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 40px 10px;
   }
 
   .search-icon {
@@ -989,11 +997,6 @@
     width: 100%;
   }
 
-  .footer {
-    flex-direction: column;
-    gap: 50px;
-    padding: 40px 10px;
-  }
 
   .newsletter {
     flex-direction: column;

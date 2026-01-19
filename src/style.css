@@ -59,11 +59,11 @@
 }
 
 .navbar {
-  color: black;
   background-color: #190D33;
   padding: 25px 0;
   color: white;
 }
+
 
 .logo {
   width: 121px;
@@ -279,6 +279,11 @@
   background-color: #160C2D;
 }
 
+.productDetails-section {
+  background-color: #1F1D40;
+  font-family: Montserrat;
+}
+
 .popularCategory-cardContent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -363,6 +368,16 @@
   border-radius: 8px;
 }
 
+.latest-titleContent-detailPage {
+  background-color: #190D33;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
 .latest-title,
 .best-title,
 .week-title {
@@ -404,6 +419,20 @@
   min-height: 550px;
   height: 100%;
   background-color: #1F1D40;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.latestProduct-card-detailsPage {
+  max-width: 306px;
+  width: 100%;
+  min-height: 550px;
+  height: 100%;
+  background-color: #190D33;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -799,6 +828,125 @@
 }
 
 
+.productDetails-page {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.productDetails-content {
+  background-color: #190D33;
+  display: flex;
+  gap: 33px;
+  color: white;
+  border-radius: 10px;
+}
+
+.image-container {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 30px;
+}
+
+.image-content {
+  position: relative;
+}
+
+.detailsPage-discount-title {
+  position: absolute;
+  background-color: #FAAD14;
+  padding: 10px 8px;
+  top: 0;
+  right: 0;
+  color: black;
+  font-weight: 600;
+}
+
+.details-container {
+  width: 100%;
+}
+
+.prod-name {
+  max-width: 513px;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 33px;
+}
+
+.productReview {
+  padding-top: 29px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.detailsContent-border {
+  border: 1px solid gray;
+  margin-top: 19px;
+  margin-bottom: 10px;
+}
+
+.info-container {
+  font-size: 14px;
+  margin-top: 26px;
+  line-height: 24px;
+  list-style-position: inside;
+}
+
+.info {
+  color: #8D94A4;
+}
+
+.list-style {
+  list-style-type: none;
+}
+
+.btn-section {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.quantity-btn {
+  width: 125px;
+  border: 1px solid rgb(67, 67, 67);
+  padding-inline: 6px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 11px;
+}
+
+.btn {
+  width: 217px;
+  height: 51px;
+  font-size: 16px;
+  color: white;
+  background-color: #409DDF;
+  border: 1px solid #409DDF;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.fvrt-icon {
+  border: 1px solid gray;
+  width: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+
+
 
 
 @media (min-width:1162px) {
@@ -945,7 +1093,7 @@
     max-width: 400px;
   }
 
- 
+
 }
 
 
@@ -957,11 +1105,11 @@
     display: none;
   }
 
-  .specilaPImgContainer{
+  .specilaPImgContainer {
     justify-content: center;
   }
 
-   .footer {
+  .footer {
     flex-wrap: wrap;
     gap: 50px;
     padding: 40px 10px;
@@ -1040,7 +1188,8 @@
 
   .latest-titleContent,
   .weekProduct-titleContent,
-  .blog-titleContent {
+  .blog-titleContent,
+  .latest-titleContent-detailPage {
     flex-direction: column;
     align-items: start;
     gap: 10px;
@@ -1109,5 +1258,48 @@
   .banner-image {
     height: 100%;
     max-height: 500px;
+  }
+
+  .productDetails-content {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .btn-section {
+    flex-wrap: wrap;
+  }
+
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .image-container {
+    width: 100%;
+    padding-left: 0;
+    padding: 20px;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+
+  .prod-name {
+    padding-top: 0;
+  }
+
+  .details-container {
+    padding: 20px;
+  }
+
+  .quantity-btn {
+    max-width: 113px;
+  }
+
+  .btn {
+    max-width: 191px;
+  }
+
+  .btn-section {
+    gap: 17px;
   }
 }

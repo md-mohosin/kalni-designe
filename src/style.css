@@ -1039,6 +1039,7 @@
 
   .btn-section {
     flex-direction: column;
+    gap: 20px;
   }
 
   .dAddbtn {

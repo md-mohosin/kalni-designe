@@ -1015,6 +1015,10 @@
     width: 50%;
   }
 
+  .details-container{
+    padding-bottom: 10px;
+  }
+
   .popularCategory-cardContent {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -1096,6 +1100,10 @@
 
   .input-name {
     gap: 40px;
+  }
+
+  .prod-name{
+    padding-top: 0;
   }
 
   .banner-section {

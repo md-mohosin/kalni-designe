@@ -604,24 +604,19 @@
 
 .subscirbe-section form {
   display: flex;
-  padding: 5px;
+  padding: 4px;
 }
 
 .subscribeBtn {
   border-radius: 5px;
-  background-color: #4DC6ED;
+  background-image: linear-gradient(to right, #44bde2, #088aed);
   padding: 15px 25px;
   border: none;
   color: white;
-  border: 1px solid #4DC6ED;
   transition: 0.4s;
   cursor: pointer;
 }
 
-.subscribeBtn:hover {
-  background-color: transparent;
-  color: #4DC6ED;
-}
 
 .subscribInput {
   width: 100%;
@@ -918,7 +913,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: pointer;border-radius: 3px;
 }
 
 .quantity-btn {
@@ -929,7 +924,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 17px 6px;
+  padding: 17px 6px;border-radius: 6px;
 }
 
 .quantity-btn-detailsP {
@@ -940,7 +935,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 17px 6px;
-  margin-right: 41px;
+  margin-right: 41px;border-radius: 6px;
 }
 
 .left-side {

@@ -913,7 +913,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;border-radius: 3px;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 .quantity-btn {
@@ -924,7 +925,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 17px 6px;border-radius: 6px;
+  padding: 17px 6px;
+  border-radius: 6px;
 }
 
 .quantity-btn-detailsP {
@@ -935,7 +937,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 17px 6px;
-  margin-right: 41px;border-radius: 6px;
+  margin-right: 41px;
+  border-radius: 6px;
 }
 
 .left-side {
@@ -1053,10 +1056,14 @@
   padding: 10px 20px;
   background-color: #aeafb1;
   border: none;
-  border-radius: 3px;transition: 0.4s;border: 1px solid #aeafb1;
+  border-radius: 3px;
+  transition: 0.4s;
+  border: 1px solid #aeafb1;
 }
-.cart-update-btn:hover{
-  background-color: transparent;color: white;
+
+.cart-update-btn:hover {
+  background-color: transparent;
+  color: white;
 }
 
 .cuppon-form {
@@ -1081,7 +1088,8 @@
   width: 100%;
   height: 40px;
   border: none;
-  background-image: linear-gradient(to right, #44bde2, #088aed);color: white;
+  background-image: linear-gradient(to right, #44bde2, #088aed);
+  color: white;
 }
 
 .totalDetails-container {
@@ -1138,11 +1146,18 @@
   padding: 17px 0;
   margin-top: 30px;
   border: none;
-  border-radius: 3px;transition: 0.4s;border: 1px solid #4ABCE9;color: white;
+  border-radius: 3px;
+  transition: 0.4s;
+  border: 1px solid #4ABCE9;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
 }
-.checkout-btn:hover{
+
+.checkout-btn:hover {
   background-color: transparent;
-  color:#4ABCE9 ;
+  color: #4ABCE9;
 }
 
 .table {
@@ -1154,6 +1169,227 @@
 th {
   padding: 23px 0;
   border-bottom: 1px solid gray;
+}
+
+.billingDetails-page {
+  background-color: #1F1D40;
+}
+
+.billingDetails-section {
+  padding-top: 30px;
+}
+
+.billingDetails-container {
+  background-color: #190D33;
+  padding-top: 34px;
+  padding-bottom: 130px;
+  padding-inline: 34px;
+  border-radius: 8px;
+  font-family: Montserrat;
+}
+
+.returning-container {
+  display: flex;
+  gap: 15px;
+  color: white;
+  padding: 10px 23px;
+  border: 1px solid gray;
+}
+
+.returning-login {
+  text-decoration: none;
+  color: #4ABCE9;
+  font-size: 14px;
+}
+
+.billingDetails-content {
+  margin-top: 85px;
+  display: flex;
+  gap: 90px;
+  align-items: start;
+}
+
+.billingDetails-rightSide,
+.billingDetails-rightSide {
+  width: 50%;
+  color: white;
+}
+
+.order-title,
+.billing-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.nameInput-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.firstName-container,
+.lastName-container {
+  width: 100%;
+}
+
+.name-input {
+  background-color: transparent;
+  border: 1px solid white;
+  height: 44px;
+  width: 100%;
+  margin-top: 12px;
+  color: white;
+  padding-inline: 15px;
+  border: 1px solid gray;
+}
+
+.companyInput-container,
+.contrySelect-cotnainer,
+.streetInput-container,
+.townInput-container,
+.districtInput-container,
+.postcodeInput-container,
+.phoneInput-container,
+.emailInput-container,
+.passwordInput-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.company-input,
+.contry-select,
+.street-input,
+.town-input,
+.district-input,
+.postcode-input,
+.phone-input,
+.email-input,
+.password-input {
+  background-color: transparent;
+  border: 1px solid gray;
+  height: 44px;
+  width: 100%;
+  margin-top: 12px;
+  padding-inline: 15px;
+  color: white;
+}
+
+.notesArea {
+  background-color: transparent;
+  border: 1px solid gray;
+  height: 130px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.billingDetails-subTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.billingApply-form {
+  display: flex;
+  margin-top: 30px;
+}
+
+.billingApply-input {
+  background-color: transparent;
+  width: 100%;
+  border: 1px solid gray;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-right: none;
+}
+
+.billingApply-btn {
+  width: 162px;
+  height: 40px;
+  background-image: linear-gradient(to right, #44bde2, #088aed);
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.billingPayment-container {
+  margin-top: 63px;
+}
+
+.billingPayment-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.selectBank-box {
+  border: 1px solid gray;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.billing-bankTitle {
+  font-weight: 600;
+}
+
+.billing-bankDescription {
+  font-size: 14px;
+  padding-top: 10px;
+  color: gray;
+}
+
+.payment-check {
+  display: flex;
+  gap: 8px;
+  border: 1px solid gray;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.checkCondition-content {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.checkCondition-title {
+  font-size: 14px;
+}
+
+.terms-title {
+  color: #088aed;
+  text-decoration: none;
+}
+
+.placeOrder-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #419EDF;
+  width: 100%;
+  gap: 4px;
+  color: white;
+  border: 1px solid #419EDF;
+  cursor: pointer;
+  margin-top: 40px;
+  border-radius: 3px;transition: 0.5s;
+}
+.placeOrder-btn:hover{
+  background-color: transparent;color:#419EDF ;
+}
+
+.billingDetails-rightSide .cartP-price {
+  padding-right: 0;
+  padding-left: 20px
+}
+
+.billingDetails-rightSide .quantity-btn-detailsP {
+  max-width: 105px;
+  width: 100%;
 }
 
 

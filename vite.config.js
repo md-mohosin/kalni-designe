@@ -6,7 +6,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        single: resolve(__dirname, 'productDetails.html'), // Example of a file in a subdirectory
+        single: resolve(__dirname, 'productDetails.html'),
+        shopping: resolve(__dirname, 'shoppingCart.html'),
+        billing: resolve(__dirname, 'billingDetails.html'),
       },
     },
   },

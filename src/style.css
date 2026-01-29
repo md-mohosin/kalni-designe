@@ -1757,6 +1757,10 @@ th {
   .allCart-container {
     flex-direction: column;
   }
+  .cart-container{
+    max-width: 100%;
+    width: 100%;
+  }
 
 }
 

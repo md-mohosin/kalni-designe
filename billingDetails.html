@@ -149,9 +149,9 @@
                                     <input class="company-input" type="text">
                                 </div>
 
-                                <div class="contrySelect-cotnainer">
+                                <div class="countrySelect-cotnainer">
                                     <label for="">Country / Region*</label>
-                                    <select class="contry-select">
+                                    <select class="country-select">
                                         <option value="">Bangladesh</option>
                                         <option value="">Pakistan</option>
                                         <option value="">America</option>
@@ -172,7 +172,7 @@
 
                                 <div class="districtInput-container">
                                     <label for="">District*</label>
-                                    <select class="contry-select">
+                                    <select class="district-select">
                                         <option value="">Select an option</option>
                                         <option value="">Pakistan</option>
                                         <option value="">America</option>
@@ -219,62 +219,34 @@
                         <div class="billingDetails-rightSide">
                             <p class="order-title">Your order</p>
                             <div>
-                                <table class="table">
-                                    <tr class="tableHead-row">
-                                        <th>Product</th>
-                                        <th></th>
-                                        <th>Subtotal</th>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cartImage-name">
-                                                <img src="./src/images/small.png" alt="">
-                                                <div>
-                                                    <h1 class="cartP-name">BLUEAIR Air Purifiers for Large
-                                                        Home Room, HEPASilent...</h1>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="quantity-btn-detailsP">
-                                                <img src="./src/images/minus.png" alt="">
-                                                <p>2</p>
-                                                <img src="./src/images/plus.png" alt="">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="cartP-price">$499.90</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cartImage-name">
-                                                <img src="./src/images/small.png" alt="">
-                                                <div>
-                                                    <h1 class="cartP-name">BLUEAIR Air Purifiers for Large
-                                                        Home Room, HEPASilent...</h1>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="quantity-btn-detailsP">
-                                                <img src="./src/images/minus.png" alt="">
-                                                <p>2</p>
-                                                <img src="./src/images/plus.png" alt="">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="cartP-price">$499.90</p>
-                                        </td>
-                                    </tr>
+                                <div style="margin-top: 34px;">
+                                    <div class="card-heading">
+                                        <p>Product</p>
+                                        <p>Subtotal</p>
+                                    </div>
 
-                                </table>
+                                    <!-- cart -->
+                                    <div class="billingDetails-cart">
+                                        <div class="productN-img">
+                                            <img src="./src/images/small.png" alt="">
+                                            <h1 class="cartP-name">BLUEAIR Air Purifiers for Large
+                                                Home Room, HEPASilent...</h1>
+                                        </div>
+                                        <div class="billingDetails-quantity">
+                                            <img src="./src/images/minus.png" alt="">
+                                            <p>2</p>
+                                            <img src="./src/images/plus.png" alt="">
+                                        </div>
+                                        <p class="cartP-price">$499.90</p>
+                                    </div>
+                                </div>
+
                                 <div class="billingDetails-subTotal">
                                     <P>Subtotal</P>
                                     <p>$499.90</p>
                                 </div>
                                 <form class="billingApply-form" action="">
-                                    <input class="billingApply-input" type="text">
+                                    <input class="billingApply-input" type="text" placeholder="Enter coupon code here...">
                                     <button class="billingApply-btn">Apply</button>
                                 </form>
                                 <div class="billingDetails-subTotal">

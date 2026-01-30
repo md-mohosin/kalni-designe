@@ -724,6 +724,13 @@
   background-color: #1F1D40;
 }
 
+.blogCard-blogPage {
+  max-width: 306px;
+  width: 100%;
+  border-radius: 13px;
+  background-color: #190D33;
+}
+
 .blog-img {
   max-width: 100%;
   width: 100%;
@@ -1112,11 +1119,14 @@ th {
   border-bottom: 1px solid gray;
 }
 
-.billingDetails-page {
+.billingDetails-page,
+.blogs-page {
   background-color: #1F1D40;
+  font-family: Montserrat;
 }
 
-.billingDetails-section {
+.billingDetails-section,
+.blogs-section {
   padding-top: 30px;
 }
 
@@ -1217,14 +1227,16 @@ th {
   color: white;
 }
 
-.country-select,.district-select {
+.country-select,
+.district-select {
   appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 9l6 6 6-6' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 20px 20px;
 }
-.password-input{
+
+.password-input {
   appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M1.5 12s4-7 10.5-7 10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='12' cy='12' r='3' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -1237,7 +1249,8 @@ th {
   border: 1px solid gray;
   height: 130px;
   width: 100%;
-  margin-top: 12px;padding: 12px;
+  margin-top: 12px;
+  padding: 12px;
 }
 
 .billingDetails-subTotal {
@@ -1258,7 +1271,8 @@ th {
   border: 1px solid gray;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  border-right: none;padding-left: 24px;
+  border-right: none;
+  padding-left: 24px;
 }
 
 .billingApply-btn {
@@ -1536,6 +1550,112 @@ th {
   gap: 10px;
 }
 
+.blogPage-container {
+  display: flex;
+  gap: 50px;
+  align-items: start
+}
+
+.blogPage-leftSide {
+  max-width: 290px;
+  width: 100%;
+  background-color: #190D33;
+  padding: 30px 20px;
+  color: white;
+  border-radius: 6px;
+}
+
+.blogPage-form {
+  display: flex;
+}
+
+.blogPage-input {
+  border: 1px solid gray;
+  background-color: transparent;
+  border-right: none;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  padding-left: 15px;
+}
+
+.blogPage-searchBtn {
+  max-width: 76px;
+  width: 100%;
+  height: 43px;
+  background-image: linear-gradient(to right, #44bde2, #088aed);
+  border: none;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.leftPost-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 29px;
+}
+
+.post-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid gray;
+  padding: 22px 0;
+}
+
+.postCard-heading {
+  font-size: 14px;
+}
+
+.postCard-title {
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.blogPage-categries {
+  color: white;
+  margin-top: 42px;
+}
+
+.blogPage-categoryTitle {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.blogPage-categoryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 19px;
+}
+
+.blogPage-category {
+  font-size: 14px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 7px;
+}
+
+.blogPage-rightSide {
+  width: 100%;
+}
+
+.blogPage-title {
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #190D33;
+  padding: 12px 24px;
+  border-radius: 7px;
+  color: white;
+}
+
+.blogPage-blogCard-container {
+  margin-top: 33px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  place-items: center;
+}
+
 
 
 
@@ -1757,9 +1877,13 @@ th {
   .allCart-container {
     flex-direction: column;
   }
-  .cart-container{
+
+  .cart-container {
     max-width: 100%;
     width: 100%;
+  }
+  .blogPage-blogCard-container{
+    grid-template-columns: repeat(2,1fr);
   }
 
 }
@@ -1867,6 +1991,9 @@ th {
   .product-image {
     width: 70px;
     height: 70px;
+  }
+  .blogPage-blogCard-container{
+    grid-template-columns: repeat(1,1fr);
   }
 
 }
@@ -2082,5 +2209,11 @@ th {
 
   .product-name {
     font-size: 13px;
+  }
+  .blogPage-container{
+    flex-direction: column;
+  }
+  .blogPage-leftSide{
+    max-width: 100%;
   }
 }

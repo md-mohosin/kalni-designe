@@ -12,6 +12,20 @@ input[type="checkbox"] {
 }
 
 
+.hidden-sideNav {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  border: 1px solid red;
+  padding: 30px;
+  background-color: #1F1D40;
+}
+
+.hidden {
+  display: none;
+}
+
+
 .container {
   max-width: 1920px;
   margin: 0 auto;
@@ -2036,8 +2050,10 @@ th {
   .blogs-images {
     grid-template-columns: repeat(2, 1fr);
   }
-  .blogPage-nameEmail-input{
-    flex-direction: column;gap: 23px;
+
+  .blogPage-nameEmail-input {
+    flex-direction: column;
+    gap: 23px;
   }
 
 }
@@ -2151,7 +2167,8 @@ th {
   .blogs-images {
     grid-template-columns: repeat(1, 1fr);
   }
-  .blogPage-sharePostcontent{
+
+  .blogPage-sharePostcontent {
     flex-direction: column;
   }
 
@@ -2378,7 +2395,8 @@ th {
     max-width: 100%;
     padding: 15px;
   }
-  .blogDetails-section{
+
+  .blogDetails-section {
     padding: 15px;
   }
 }

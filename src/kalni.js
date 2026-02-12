@@ -1,14 +1,10 @@
-const navMenu = document.getElementById("nav-menu")
-const menuImgsrc = "./src/images/menu.png"
-const crossImgsrc = "./src/images/cross.png"
-navMenu.addEventListener("click", () => {
-    const isHidden = document.getElementById("hidden-nav").classList.toggle("hidden")
+const menuIcon = document.getElementById('menuIcon');
+const sidebar = document.getElementById("sidebar")
 
-    if (isHidden) {
-        navMenu.src = menuImgsrc
-    }
-    else{
-        navMenu.src = crossImgsrc
-    }
 
+
+menuIcon.addEventListener("click",()=>{
+    menuIcon.classList.toggle("active")
+    sidebar.classList.toggle("active")
 })
+

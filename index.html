@@ -67,18 +67,23 @@
             </div>
             <a href="shoppingCart.html" style="text-decoration: none;color: white;">
               <div class="d-cart-icon">
-              <div class="d-nav-icon">
-                <p class="nav-badge">
-                  0</p>
-                <img src="./src/images/shopping-cart-02.png" alt="">
+                <div class="d-nav-icon">
+                  <p class="nav-badge">
+                    0</p>
+                  <img src="./src/images/shopping-cart-02.png" alt="">
+                </div>
+                <p style="font-size: 12px;">Your cart <br> $0.00</p>
               </div>
-              <p style="font-size: 12px;">Your cart <br> $0.00</p>
-            </div>
             </a>
           </div>
           <div class="hidden-icon" style="display: flex; gap: 20px;">
             <img class="search-icon" src="./src/images/search.png" alt="">
-            <img class="menu-icon" id="nav-menu" src="./src/images/menu.png" alt="">
+            <!-- <img class="menu-icon" id="nav-menu" src="./src/images/menu.png" alt=""> -->
+            <div class="menu-icon" id="menuIcon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
 
@@ -118,8 +123,21 @@
       <h1>Hidden navbar</h1>
     </div>
   </header>
+
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services"> Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+
+
   <main>
-     <!-- BANNER SECTION -->
+    <!-- BANNER SECTION -->
     <section class="banner-section container">
       <div class="banner-container">
         <div class="banner-content">
@@ -830,7 +848,7 @@
       <div class="footer-bottom">
         <div class="content footer-bottom-content">
           <p>© 2026 All Rights Reserved </p>
-          <div class="payment-icons"> 
+          <div class="payment-icons">
             <img src="./src/images/Payment method icon.png" alt="">
             <img src="./src/images/Payment method icon (1).png" alt="">
             <img src="./src/images/Payment method icon (3).png" alt="">

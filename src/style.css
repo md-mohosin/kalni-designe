@@ -2419,12 +2419,12 @@ th {
     gap: 12px;
   }
 
-  .price::before {
+  /* .price::before {
     content: 'Price:';
     color: #6b7280;
     font-weight: 400;
     font-size: 14px;
-  }
+  } */
 
   .quantity-control::before {
     content: 'Quantity:';

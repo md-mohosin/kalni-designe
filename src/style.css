@@ -15,7 +15,8 @@
 }
 
 .carousel .card {
-  list-style: none;
+  cursor: pointer;
+  scroll-snap-align: start;
 }
 
 .wrapper .carousel {
@@ -23,7 +24,13 @@
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 4) - 17px);
   gap: 20px;
-  overflow: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar{
+  display: none;
 }
 
 .wrapper i {

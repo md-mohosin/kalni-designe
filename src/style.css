@@ -9,17 +9,20 @@
 
 
 
-.wrapper {
+.wrapper,
+.weekProduct-wrapper {
   position: relative;
   margin-top: 24px;
 }
 
-.carousel .card {
+.carousel .card,
+.weekProduct-carouselCard {
   cursor: pointer;
   scroll-snap-align: start;
 }
 
-.wrapper .carousel {
+.wrapper .carousel,
+.weekProduct-carousel {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 4) - 17px);
@@ -29,11 +32,14 @@
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
-.carousel::-webkit-scrollbar{
+
+.carousel::-webkit-scrollbar {
   display: none;
 }
 
-.wrapper i {
+.wrapper i,
+#weekCarousel-leftArrow,
+#weekCarousel-rightArrow {
   width: 50px;
   height: 50px;
   background-color: white;
@@ -46,19 +52,15 @@
   transform: translateY(-50%);
 }
 
-.wrapper i:first-child {
+.wrapper i:first-child ,#weekCarousel-leftArrow {
   left: -16px;
   z-index: 10;
 }
 
-.wrapper i:last-child {
+.wrapper i:last-child,#weekCarousel-rightArrow {
   right: -16px;
   z-index: 10;
 }
-
-
-
-
 
 
 input[type="checkbox"] {
@@ -532,9 +534,8 @@ input[type="checkbox"] {
   gap: 16px;
 }
 
-.latestCard-container,
+
 .bestCard-container,
-.weekCard-container,
 .blogCard-container {
   padding-top: 24px;
   display: grid;
@@ -546,7 +547,6 @@ input[type="checkbox"] {
 .latestProduct-card,
 .bestProduct-card,
 .weekProduct-card {
-  /* max-width: 306px; */
   width: 100%;
   height: 580px;
   background-color: #1F1D40;
@@ -2076,7 +2076,8 @@ th {
     gap: 20px;
   }
 
-  .wrapper .carousel {
+  .wrapper .carousel,
+.weekProduct-carousel {
     grid-auto-columns: calc((100% / 3) - 12px);
   }
 
@@ -2305,7 +2306,8 @@ th {
     flex-direction: column;
   }
 
-  .wrapper .carousel {
+  .wrapper .carousel,
+.weekProduct-carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
 
@@ -2318,9 +2320,10 @@ th {
 
 @media (max-width:610px) {
 
-  .wrapper .carousel {
-    grid-auto-columns: 100% ;
-    justify-content: start;
+  .wrapper .carousel,
+.weekProduct-carousel {
+    grid-auto-columns: 100%;
+    /* justify-content: start; */
   }
 
   .popularCategory-cardContent,

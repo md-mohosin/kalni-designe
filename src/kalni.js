@@ -73,3 +73,26 @@ weekCarouselrightArrow.addEventListener("click", () => {
 weekCarouselLeftArrow.addEventListener("click", () => {
     weekCarousel.scrollLeft += -weekCarouselCard
 })
+
+
+
+
+
+
+
+
+
+
+
+const popularCarouselLeftArrow = document.getElementById("popularCarousel-leftArrow")
+const popularCarouselRightArrow = document.getElementById("popularCarousel-rightArrow")
+const popularCarousel = document.querySelector(".popularCard-carousel")
+const popularCardCarousel = document.querySelector(".poplularCarousel-card").offsetWidth
+
+popularCarouselRightArrow.addEventListener("click", () => {
+    popularCarousel.scrollLeft += popularCardCarousel
+})
+
+popularCarouselLeftArrow.addEventListener("click", () => {
+popularCarousel.scrollLeft += -popularCardCarousel
+})

@@ -16,7 +16,8 @@
 }
 
 .carousel .card,
-.weekProduct-carouselCard {
+.weekProduct-carouselCard,
+.poplularCarousel-card {
   cursor: pointer;
   scroll-snap-align: start;
 }
@@ -52,15 +53,49 @@
   transform: translateY(-50%);
 }
 
-.wrapper i:first-child ,#weekCarousel-leftArrow {
+.wrapper i:first-child,
+#weekCarousel-leftArrow {
   left: -16px;
   z-index: 10;
 }
 
-.wrapper i:last-child,#weekCarousel-rightArrow {
+.wrapper i:last-child,
+#weekCarousel-rightArrow {
   right: -16px;
   z-index: 10;
 }
+
+
+.populsrCarousel-btnContainer {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+#popularCarousel-leftArrow,
+#popularCarousel-rightArrow {
+  background: white;
+  color: black;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+}
+
+
+.popularCard-carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100%/5) - 17px);
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+
+
 
 
 input[type="checkbox"] {
@@ -434,7 +469,6 @@ input[type="checkbox"] {
 }
 
 .popular-category-card {
-  max-width: 244px;
   width: 100%;
   max-height: 265px;
   height: 100%;
@@ -2077,8 +2111,12 @@ th {
   }
 
   .wrapper .carousel,
-.weekProduct-carousel {
+  .weekProduct-carousel {
     grid-auto-columns: calc((100% / 3) - 12px);
+  }
+
+  .popularCard-carousel {
+    grid-auto-columns: calc((100% / 4) - 17px);
   }
 
 }
@@ -2188,6 +2226,10 @@ th {
   .blogPage-nameEmail-input {
     flex-direction: column;
     gap: 23px;
+  }
+
+  .popularCard-carousel {
+    grid-auto-columns: calc((100% / 3) - 17px);
   }
 
 }
@@ -2307,8 +2349,13 @@ th {
   }
 
   .wrapper .carousel,
-.weekProduct-carousel {
+  .weekProduct-carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
+  }
+
+  .popularCard-carousel {
+    grid-auto-columns: calc((100% / 2) - 20px);
+    gap: 32px;
   }
 
 }
@@ -2321,7 +2368,7 @@ th {
 @media (max-width:610px) {
 
   .wrapper .carousel,
-.weekProduct-carousel {
+  .weekProduct-carousel {
     grid-auto-columns: 100%;
     /* justify-content: start; */
   }
@@ -2335,7 +2382,6 @@ th {
   }
 
   .popular-category-card {
-    max-width: 244px;
     height: 300px;
   }
 
@@ -2543,5 +2589,16 @@ th {
 
   .blogDetails-section {
     padding: 15px;
+  }
+}
+
+
+@media (max-width:500px) {
+  .popularCard-carousel {
+    grid-auto-columns: 100%;
+  }
+
+  .popularCategory-title {
+    font-size: 18px;
   }
 }
